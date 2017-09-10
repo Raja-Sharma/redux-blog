@@ -5,7 +5,9 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux';
 import reducers from './reducers/index';
 
-const store = applyMiddleware()(createStore)
+import promise from 'redux-promise'
+
+const store = applyMiddleware(promise)(createStore)
 
 ReactDOM.render(
   <Provider store={store(reducers)}>

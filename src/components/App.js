@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import Entries from '../containers/Entries'
 
 class App extends Component {
   render() {
     return (
       <div>
-        hello from App.js
+        <h1>Blog</h1>
+        <Entries />
       </div>
     )
   }

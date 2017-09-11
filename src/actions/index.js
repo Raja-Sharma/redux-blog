@@ -8,5 +8,12 @@ export function fetchEntries() {
     type: 'FETCH_ENTRIES',
     payload: request
   }
+}
 
+export function fetchEntry(id) {
+  const request = axios.get(`${ROOT_URL}/entries/${id}`)
+  return {
+    type: 'FETCH_ENTRY',
+    payload: request
+  }
 }

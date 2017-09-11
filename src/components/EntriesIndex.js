@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchEntries } from '../actions'
 import _ from 'lodash'
+import { Link } from 'react-router-dom'
 
 class Entries extends Component {
 
@@ -13,7 +14,7 @@ class Entries extends Component {
     return _.map(this.props.entries, entry=> {
       return (
         <li key={entry.id}>
-            {entry.title}
+            <Link to={`/entries/${entry.id}`}><h3>{entry.title}</h3></Link>
         </li>
       )
     })

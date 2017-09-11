@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchEntry } from '../actions'
+import { Link } from 'react-router-dom'
 
 class EntriesShow extends Component {
 
@@ -18,6 +19,7 @@ class EntriesShow extends Component {
       <div>
         <h2>{entry.title}</h2>
         <p>{entry.body}</p>
+        <Link to='/'>Back to index</Link>
       </div>
     )
   }

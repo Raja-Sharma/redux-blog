@@ -1,0 +1,22 @@
+body {
+    background-color: #FFD1AA;
+    color: #552700;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+li {
+  list-style-type: square
+}
+
+p {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+a {
+  color: #A8383B
+}

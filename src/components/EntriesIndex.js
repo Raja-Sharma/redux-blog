@@ -24,7 +24,7 @@ class Entries extends Component {
     if (!this.props.entries) return <p>loading...</p>
     return (
       <div>
-        <h1>Blogs entries</h1>
+        <h1>Hipster blog entries</h1>
         <ul>
           {this.renderEntries()}
         </ul>

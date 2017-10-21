@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import EntriesIndex from './components/EntriesIndex'
-import EntriesShow from './components/EntriesShow'
+import EntriesIndex from './containers/EntriesIndex'
+import EntriesShow from './containers/EntriesShow'
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux';
 import reducers from './reducers/index';

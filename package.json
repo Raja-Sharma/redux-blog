@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack; webpack-dev-server --content-base dist/"
+    "dev": "webpack; webpack-dev-server --content-base dist/"
   },
   "keywords": [],
   "author": "",

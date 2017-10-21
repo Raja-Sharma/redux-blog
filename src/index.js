@@ -10,6 +10,8 @@ import promise from 'redux-promise'
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
+require('./stylesheets/style.css')
+
 const store = applyMiddleware(promise)(createStore)
 
 ReactDOM.render(
